@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucho Cuts</title>
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#d11a2a;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1050px,92%);margin:auto}
+header{height:72px;position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);border-bottom:1px solid #eee;backdrop-filter:blur(10px)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;flex-direction:column;line-height:1.05}
+.logo{font-size:1.5rem;font-weight:900;letter-spacing:1px}
+.location{font-size:.72rem;font-weight:700;margin-top:5px;letter-spacing:.5px}
+.nav-links{display:flex;align-items:center;gap:18px;font-size:.9rem;font-weight:800}
+.nav-links a:hover{text-decoration:underline}
+.btn{display:inline-block;border:0;border-radius:999px;background:#d11a2a;color:#fff;padding:13px 23px;font-weight:900;cursor:pointer;font:inherit}
+.page{min-height:calc(100vh - 72px);padding:70px 0}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title small{font-weight:900;letter-spacing:2px;text-transform:uppercase}
+.section-title h1,.section-title h2{font-size:clamp(2.3rem,6vw,4rem);margin-top:5px}
+@media(max-width:700px){
+  .nav-links{gap:9px;font-size:.72rem}
+}
+
+.hero{
+  min-height:calc(100vh - 72px);
+  display:grid;
+  place-items:center;
+  text-align:center;
+  background:
+    radial-gradient(circle at 50% 20%,rgba(209,26,42,.08),transparent 30%),
+    linear-gradient(rgba(255,255,255,.50),rgba(255,255,255,.73)),
+    url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1600&q=85') center/cover;
+}
+.hero h1{font-size:clamp(3rem,9vw,7rem);line-height:.95;text-transform:uppercase;letter-spacing:-3px;margin-bottom:18px}
+.hero p{max-width:650px;margin:0 auto 26px;font-size:1.08rem;font-weight:600}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <a class="logo" href="index.html">LUCHO CUTS</a>
+        <span class="location">Toronto, Ontario</span>
+      </div>
+      <div class="nav-links">
+        <a href="booking.html">Book</a>
+        <a href="work.html#gallery">Gallery</a>
+        <a href="work.html#about">About</a>
+        <a href="https://www.instagram.com/luchoo.cuts/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Fresh cut.<br>Fresh look.</h1>
+      <p>Clean haircuts and fresh style. Appointments are available so every cut gets the time and attention it needs.</p>
+      <a class="btn" href="booking.html">Book Appointment</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
