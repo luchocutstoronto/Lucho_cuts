@@ -22,19 +22,14 @@ nav{height:72px;display:flex;align-items:center;justify-content:space-between;ga
 .section-title{text-align:center;margin-bottom:35px}
 .section-title small{font-weight:900;letter-spacing:2px;text-transform:uppercase}
 .section-title h1,.section-title h2{font-size:clamp(2.3rem,6vw,4rem);margin-top:5px}
-@media(max-width:700px){
-  .nav-links{gap:9px;font-size:.72rem}
-}
+@media(max-width:700px){.nav-links{gap:9px;font-size:.72rem}}
 .booking-shell{max-width:900px;margin:auto}
 .booking-card{border:1px solid #eee;border-radius:24px;padding:28px;box-shadow:0 12px 35px rgba(0,0,0,.07);background:#fff}
 .service{display:flex;justify-content:space-between;align-items:center;border:1px solid #efc5ca;border-radius:16px;padding:17px;margin-bottom:24px;font-weight:900}
 .calendar-frame{width:100%;height:720px;border:1px solid #eee;border-radius:18px;background:#fafafa}
 .fallback{text-align:center;margin-top:18px}
 .fallback p{margin-bottom:12px;font-weight:700}
-@media(max-width:700px){
-  .booking-card{padding:16px}
-  .calendar-frame{height:680px}
-}
+@media(max-width:700px){.booking-card{padding:16px}.calendar-frame{height:680px}}
 </style>
 </head>
 <body>
@@ -63,14 +58,9 @@ nav{height:72px;display:flex;align-items:center;justify-content:space-between;ga
     <div class="booking-card">
       <div class="service">
         <span>Haircut</span>
-        <span>FREE</span>
+        <span>$10</span>
       </div>
-      <iframe
-        class="calendar-frame"
-        src="https://calendar.app.google/nCTBEanEgjzhTg1D6"
-        title="Lucho Cuts booking calendar"
-        loading="lazy">
-      </iframe>
+      <iframe class="calendar-frame" src="https://calendar.app.google/nCTBEanEgjzhTg1D6" title="Lucho Cuts booking calendar" loading="lazy"></iframe>
       <div class="fallback">
         <p>If the calendar does not load here, open the booking page directly.</p>
         <a class="btn" href="https://calendar.app.google/nCTBEanEgjzhTg1D6" target="_blank" rel="noopener noreferrer">See Available Times</a>
